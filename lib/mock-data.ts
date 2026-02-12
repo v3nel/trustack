@@ -250,7 +250,7 @@ export const mockProjects: Project[] = [
 
 export const mockProfile: FreelancerProfile = {
   name: "Alex Morgan",
-  email: "alex@freedom.dev",
+  email: "alex@trustack.dev",
   title: "Full-Stack Developer & Designer",
   avatar: "",
   bio: "Passionate freelancer with 6+ years of experience building web and mobile applications. I love turning complex problems into simple, beautiful solutions.",

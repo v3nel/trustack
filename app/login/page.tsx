@@ -52,7 +52,7 @@ export default function LoginPage() {
                 <Zap className="size-5" />
               </div>
               <span className="text-2xl font-bold tracking-tight">
-                Freedom
+                Trustack
               </span>
             </Link>
           </div>
@@ -67,7 +67,7 @@ export default function LoginPage() {
               </h2>
               <p className="mt-4 max-w-md text-primary-foreground/70">
                 Join thousands of freelancers who manage projects, build client
-                trust, and get paid securely with Freedom.
+                trust, and get paid securely with Trustack.
               </p>
             </div>
 
@@ -105,7 +105,7 @@ export default function LoginPage() {
           <div className="relative z-10">
             <blockquote className="rounded-lg border border-primary-foreground/10 bg-primary-foreground/5 p-5">
               <p className="text-sm italic text-primary-foreground/80">
-                &ldquo;Freedom changed how I work with clients. The
+                &ldquo;Trustack changed how I work with clients. The
                 transparency and escrow system gave them peace of mind, and I
                 get paid faster.&rdquo;
               </p>
@@ -127,7 +127,7 @@ export default function LoginPage() {
               <div className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
                 <Zap className="size-4" />
               </div>
-              <span className="text-lg font-bold">Freedom</span>
+              <span className="text-lg font-bold">Trustack</span>
             </Link>
           </div>
 
@@ -315,7 +315,7 @@ export default function LoginPage() {
                     <CheckCircle2 className="size-5 shrink-0 text-emerald-500 mt-0.5" />
                     <div className="text-xs text-muted-foreground space-y-1">
                       <p className="font-medium text-foreground">
-                        What you get with Freedom
+                        What you get with Trustack
                       </p>
                       <ul className="space-y-0.5">
                         <li>• Unlimited projects & tasks</li>

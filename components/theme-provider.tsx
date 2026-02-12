@@ -24,7 +24,7 @@ export function ThemeProvider({
   const [theme, setTheme] = useState<Theme>(defaultTheme);
 
   useEffect(() => {
-    const stored = localStorage.getItem("freedom-theme") as Theme | null;
+    const stored = localStorage.getItem("trustack-theme") as Theme | null;
     if (stored) setTheme(stored);
   }, []);
 
@@ -42,7 +42,7 @@ export function ThemeProvider({
       root.classList.add(theme);
     }
 
-    localStorage.setItem("freedom-theme", theme);
+    localStorage.setItem("trustack-theme", theme);
   }, [theme]);
 
   return (

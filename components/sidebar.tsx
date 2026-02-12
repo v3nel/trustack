@@ -59,7 +59,7 @@ export function Sidebar() {
             <Zap className="size-4" />
           </div>
           <Link href="/dashboard" className="text-xl font-bold tracking-tight">
-            Freedom
+            Trustack
           </Link>
         </div>
 

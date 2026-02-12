@@ -61,7 +61,7 @@ export default function ShareableProfilePage() {
             <div className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
               <Zap className="size-4" />
             </div>
-            <span className="text-lg font-bold">Freedom</span>
+            <span className="text-lg font-bold">Trustack</span>
           </div>
           <Badge variant="secondary" className="gap-1.5">
             <ExternalLink className="size-3" />
@@ -247,7 +247,7 @@ export default function ShareableProfilePage() {
               href="/"
               className="font-medium text-foreground hover:underline"
             >
-              Freedom
+              Trustack
             </Link>{" "}
             — Transparent freelance project management
           </p>

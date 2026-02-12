@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Freedom — Freelancer Project Management",
+  title: "Trustack — Freelancer Project Management",
   description:
-    "Manage projects, tasks, and client transparency with Freedom.",
+    "Manage projects, tasks, and client transparency with Trustack.",
 };
 
 export default function RootLayout({

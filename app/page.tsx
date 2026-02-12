@@ -63,7 +63,7 @@ export default function LandingPage() {
             <div className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
               <Zap className="size-4" />
             </div>
-            <span className="text-xl font-bold tracking-tight">Freedom</span>
+            <span className="text-xl font-bold tracking-tight">Trustack</span>
           </div>
           <div className="flex items-center gap-3">
             <Button variant="ghost" asChild>
@@ -96,7 +96,7 @@ export default function LandingPage() {
             </h1>
             <p className="mt-6 text-lg text-muted-foreground md:text-xl">
               Manage projects, track progress, and build client trust — all in
-              one place. Freedom gives freelancers the tools to deliver
+              one place. Trustack gives freelancers the tools to deliver
               transparently and get paid securely.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -144,7 +144,7 @@ export default function LandingPage() {
             Everything you need to freelance smarter
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            From project kickoff to final payment — Freedom has you covered.
+            From project kickoff to final payment — Trustack has you covered.
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
@@ -221,7 +221,7 @@ export default function LandingPage() {
               Ready to take control of your freelance career?
             </h2>
             <p className="max-w-xl text-primary-foreground/80">
-              Join thousands of freelancers who trust Freedom to manage
+              Join thousands of freelancers who trust Trustack to manage
               projects, communicate with clients, and secure payments.
             </p>
             <Button
@@ -243,10 +243,10 @@ export default function LandingPage() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-8">
           <div className="flex items-center gap-2">
             <Zap className="size-4 text-primary" />
-            <span className="font-semibold">Freedom</span>
+            <span className="font-semibold">Trustack</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            © 2026 Freedom. Built for freelancers.
+            © 2026 Trustack. Built for freelancers.
           </p>
         </div>
       </footer>
