@@ -15,16 +15,23 @@ import {
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
+import { useFeatureFlag } from "@/lib/devcycle-client";
+import { FEATURE_ESCROW_ENABLED } from "@/lib/feature-flags";
 
-const navItems = [
+const allNavItems = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/payments", label: "Payments", icon: CreditCard },
+  { href: "/payments", label: "Payments", icon: CreditCard, featureFlag: FEATURE_ESCROW_ENABLED },
   { href: "/profile", label: "Profile", icon: User },
 ];
 
 export function Sidebar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const escrowEnabled = useFeatureFlag(FEATURE_ESCROW_ENABLED, true);
+
+  const navItems = allNavItems.filter(
+    (item) => !item.featureFlag || escrowEnabled
+  );
 
   return (
     <>

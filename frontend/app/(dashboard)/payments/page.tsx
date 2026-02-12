@@ -26,6 +26,8 @@ import {
   formatCurrency,
 } from "@/lib/mock-data";
 import type { MilestoneStatus } from "@/lib/types";
+import { useFeatureFlag } from "@/lib/devcycle-client";
+import { FEATURE_ESCROW_ENABLED } from "@/lib/feature-flags";
 
 function MilestoneStatusIcon({ status }: { status: MilestoneStatus }) {
   switch (status) {
@@ -39,6 +41,23 @@ function MilestoneStatusIcon({ status }: { status: MilestoneStatus }) {
 }
 
 export default function PaymentsPage() {
+  const escrowEnabled = useFeatureFlag(FEATURE_ESCROW_ENABLED, true);
+
+  if (!escrowEnabled) {
+    return (
+      <div className="flex min-h-[60vh] flex-col items-center justify-center text-center">
+        <div className="flex size-16 items-center justify-center rounded-full bg-muted">
+          <Shield className="size-8 text-muted-foreground" />
+        </div>
+        <h2 className="mt-6 text-xl font-semibold">Escrow is not available</h2>
+        <p className="mt-2 max-w-sm text-sm text-muted-foreground">
+          The Escrow &amp; Payments feature is currently disabled. Please
+          contact your administrator or check back later.
+        </p>
+      </div>
+    );
+  }
+
   const totalBudget = mockProjects.reduce(
     (sum, p) => sum + getProjectTotalBudget(p),
     0

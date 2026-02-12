@@ -19,8 +19,10 @@ import {
   Users,
   DollarSign,
 } from "lucide-react";
+import { getVariableValue } from "./devcycle";
+import { FEATURE_ESCROW_ENABLED } from "@/lib/feature-flags";
 
-const features = [
+const allFeatures = [
   {
     icon: Briefcase,
     title: "Project Management",
@@ -38,6 +40,7 @@ const features = [
     title: "Escrow Payments",
     description:
       "Secure milestone-based payments. Funds are locked until work is verified and approved.",
+    featureFlag: FEATURE_ESCROW_ENABLED,
   },
   {
     icon: BarChart3,
@@ -53,7 +56,12 @@ const stats = [
   { value: "98%", label: "Satisfaction Rate", icon: CheckCircle2 },
 ];
 
-export default function LandingPage() {
+export default async function LandingPage() {
+  const escrowEnabled = await getVariableValue(FEATURE_ESCROW_ENABLED, true);
+  const features = allFeatures.filter(
+    (f) => !("featureFlag" in f) || escrowEnabled
+  );
+
   return (
     <div className="min-h-screen bg-background">
       {/* Nav */}
@@ -80,7 +88,7 @@ export default function LandingPage() {
 
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/5 via-background to-background" />
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-primary/5 via-background to-background" />
         <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
           <div className="mx-auto max-w-3xl text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border bg-card px-4 py-1.5 text-sm font-medium text-muted-foreground shadow-sm">
@@ -89,7 +97,7 @@ export default function LandingPage() {
             </div>
             <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
               Freelance with
-              <span className="bg-gradient-to-r from-primary via-primary/80 to-primary/60 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-primary via-primary/80 to-primary/60 bg-clip-text text-transparent">
                 {" "}
                 confidence
               </span>
