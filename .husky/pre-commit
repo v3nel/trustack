@@ -1,0 +1,3 @@
+bun run format
+bun run lint:fix
+git diff --name-only --cached -z | xargs -0 git add

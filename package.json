@@ -5,7 +5,8 @@
         "lint": "bun run --cwd frontend lint && bun run --cwd backend lint",
         "lint:fix": "bun run --cwd frontend lint:fix && bun run --cwd backend lint:fix",
         "format": "prettier --write .",
-        "format:check": "prettier --check ."
+        "format:check": "prettier --check .",
+        "prepare": "husky"
     },
     "devDependencies": {
         "@eslint/js": "^10.0.1",
@@ -21,5 +22,8 @@
         "typescript": "^5"
     },
     "private": true,
-    "type": "module"
+    "type": "module",
+    "dependencies": {
+        "husky": "^9.1.7"
+    }
 }
