@@ -20,27 +20,23 @@ const allFeatures = [
     {
         icon: Briefcase,
         title: `Project Management`,
-        description:
-            `Organize projects with tasks, deadlines, and priorities. Track progress with visual indicators.`,
+        description: `Organize projects with tasks, deadlines, and priorities. Track progress with visual indicators.`,
     },
     {
         icon: Eye,
         title: `Client Transparency`,
-        description:
-            `Share read-only project views with clients. Build trust with real-time progress updates.`,
+        description: `Share read-only project views with clients. Build trust with real-time progress updates.`,
     },
     {
         icon: Shield,
         title: `Escrow Payments`,
-        description:
-            `Secure milestone-based payments. Funds are locked until work is verified and approved.`,
+        description: `Secure milestone-based payments. Funds are locked until work is verified and approved.`,
         featureFlag: FEATURE_ESCROW_ENABLED,
     },
     {
         icon: BarChart3,
         title: `Progress Tracking`,
-        description:
-            `Visual dashboards with task completion, deadlines, and payment tracking at a glance.`,
+        description: `Visual dashboards with task completion, deadlines, and payment tracking at a glance.`,
     },
 ];
 
@@ -176,20 +172,17 @@ export default async function LandingPage() {
                             {
                                 step: `01`,
                                 title: `Create a project`,
-                                description:
-                                    `Set up your project with tasks, milestones, and payment terms in minutes.`,
+                                description: `Set up your project with tasks, milestones, and payment terms in minutes.`,
                             },
                             {
                                 step: `02`,
                                 title: `Share with your client`,
-                                description:
-                                    `Generate a public link so clients can follow progress in real-time.`,
+                                description: `Generate a public link so clients can follow progress in real-time.`,
                             },
                             {
                                 step: `03`,
                                 title: `Get paid securely`,
-                                description:
-                                    `Milestone payments are released automatically when tasks are completed.`,
+                                description: `Milestone payments are released automatically when tasks are completed.`,
                             },
                         ].map((item) => (
                             <div key={item.step} className="text-center">

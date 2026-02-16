@@ -5,8 +5,7 @@ export const mockProjects: Project[] = [
         id: `proj-1`,
         name: `E-Commerce Redesign`,
         client: `Acme Corp`,
-        description:
-            `Complete redesign of the e-commerce platform with modern UI/UX, improved checkout flow, and mobile responsiveness.`,
+        description: `Complete redesign of the e-commerce platform with modern UI/UX, improved checkout flow, and mobile responsiveness.`,
         deadline: `2026-03-15`,
         publicLink: `client/proj-1`,
         createdAt: `2026-01-10`,
@@ -89,8 +88,7 @@ export const mockProjects: Project[] = [
         id: `proj-2`,
         name: `Brand Identity Package`,
         client: `Bloom Studio`,
-        description:
-            `Complete brand identity including logo design, color palette, typography, and brand guidelines document.`,
+        description: `Complete brand identity including logo design, color palette, typography, and brand guidelines document.`,
         deadline: `2026-02-28`,
         publicLink: `client/proj-2`,
         createdAt: `2026-01-20`,
@@ -159,8 +157,7 @@ export const mockProjects: Project[] = [
         id: `proj-3`,
         name: `Mobile App MVP`,
         client: `FitTrack Inc`,
-        description:
-            `Build a cross-platform mobile app MVP for fitness tracking with workout logging, progress charts, and social features.`,
+        description: `Build a cross-platform mobile app MVP for fitness tracking with workout logging, progress charts, and social features.`,
         deadline: `2026-04-30`,
         publicLink: `client/proj-3`,
         createdAt: `2026-02-01`,

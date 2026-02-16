@@ -2,7 +2,7 @@
 
 import { use, useState } from "react";
 import Link from "next/link";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
@@ -148,13 +148,15 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ id: st
                     <CardContent className="pt-6">
                         <p className="text-sm text-muted-foreground">Budget</p>
                         <p className="text-xl font-bold">
-                            {formatCurrency(paid)}{` `}
+                            {formatCurrency(paid)}
+                            {` `}
                             <span className="text-sm font-normal text-muted-foreground">
                                 / {formatCurrency(totalBudget)}
                             </span>
                         </p>
                         <p className="text-xs text-muted-foreground">
-                            {project.milestones.filter((m) => m.status === `released`).length} of{` `}
+                            {project.milestones.filter((m) => m.status === `released`).length} of
+                            {` `}
                             {project.milestones.length} milestones paid
                         </p>
                     </CardContent>

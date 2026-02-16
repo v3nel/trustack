@@ -26,8 +26,6 @@ import {
     Copy,
     CheckCircle2,
     Circle,
-    Clock,
-    Calendar,
     ArrowRight,
     Briefcase,
     Sparkles,
@@ -476,7 +474,8 @@ export default function CreateProjectPage() {
                                                 Client link generated!
                                             </p>
                                             <p className="text-sm text-muted-foreground">
-                                                Share this link with {clientName || `your client`}{` `}
+                                                Share this link with {clientName || `your client`}
+                                                {` `}
                                                 for read-only access.
                                             </p>
                                         </div>

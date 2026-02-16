@@ -218,22 +218,19 @@ export default function PaymentsPage() {
                             {
                                 step: `1`,
                                 title: `Funds Locked`,
-                                description:
-                                    `Client deposits payment into escrow when a milestone is created.`,
+                                description: `Client deposits payment into escrow when a milestone is created.`,
                                 icon: Lock,
                             },
                             {
                                 step: `2`,
                                 title: `Work Completed`,
-                                description:
-                                    `As you complete linked tasks, the milestone progresses toward release.`,
+                                description: `As you complete linked tasks, the milestone progresses toward release.`,
                                 icon: Clock,
                             },
                             {
                                 step: `3`,
                                 title: `Payment Released`,
-                                description:
-                                    `Once all linked tasks are done, funds are released to your account.`,
+                                description: `Once all linked tasks are done, funds are released to your account.`,
                                 icon: CheckCircle2,
                             },
                         ].map((item) => (

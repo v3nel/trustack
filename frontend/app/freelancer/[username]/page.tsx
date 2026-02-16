@@ -228,8 +228,8 @@ export default function ShareableProfilePage() {
                         Powered by{` `}
                         <Link href="/" className="font-medium text-foreground hover:underline">
                             Trustack
-                        </Link>{` `}
-                        — Transparent freelance project management
+                        </Link>
+                        {` `}— Transparent freelance project management
                     </p>
                 </div>
             </div>
