@@ -35,3 +35,7 @@ Trustack is based on a simple fronted using Next.js and ShadCN UI library. This 
 ### Back-end
 
 Trustack back-end's stack will be based on Express.js and will use a PostgreSQL database. This is perfect for a fast response time.
+
+# Contact
+
+If you want to collaborate with me on this project or one of yours, you can contact me via email following [this link](mailto:me@v3nel.dev)
