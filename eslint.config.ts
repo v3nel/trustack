@@ -20,6 +20,7 @@ export default defineConfig([
     {
         rules: {
             quotes: ["error", "backtick"],
+            "@typescript-eslint/no-unused-vars": "warn",
         },
     },
 ]);
