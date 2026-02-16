@@ -4,7 +4,7 @@
 
 ## Problem
 
-Today, a lot of freelancers are stopped in their activity to deal with problems that shouldn't take that long. Mainly the client relation and the endless meetings. In fact, clients want their product finished and can be a little pushy about the milestones of their project. 
+Today, a lot of freelancers are stopped in their activity to deal with problems that shouldn't take that long. Mainly the client relation and the endless meetings. In fact, clients want their product finished and can be a little pushy about the milestones of their project.
 
 ## Solution
 
@@ -16,7 +16,7 @@ This app will be web-based, only freelancers will have to create an account as i
 
 ## Features
 
-Trustack will bring core features to bring the solution detailed right above. 
+Trustack will bring core features to bring the solution detailed right above.
 
 Firstly, the freelancer and the client will each get a different view of the infos of the project which will be created by the freelancer. However, he will have to get the email address of the client so a link to access his view of dashboard, the freelancer can also send it personally to him by copying it using the dedicated button on his interface. While the freelancer has full access to the data of the dashboard, the client has a read-only view of the advancement of the professional. This dashboard will integrate all of the core data of the project as well as a detailed list of the tasks that has been redacted by the employee.
 

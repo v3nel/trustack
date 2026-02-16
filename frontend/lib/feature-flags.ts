@@ -9,4 +9,4 @@
  */
 
 /** Controls visibility of the Escrow / Payments feature */
-export const FEATURE_ESCROW_ENABLED = "escrow-enabled";
+export const FEATURE_ESCROW_ENABLED = `escrow-enabled`;

@@ -11,17 +11,13 @@ type FeatureFlags = Record<string, string | boolean | number>;
 const FeatureFlagsContext = createContext<FeatureFlags>({});
 
 export function FeatureFlagsProvider({
-  flags,
-  children,
+    flags,
+    children,
 }: {
-  flags: FeatureFlags;
-  children: ReactNode;
+    flags: FeatureFlags;
+    children: ReactNode;
 }) {
-  return (
-    <FeatureFlagsContext.Provider value={flags}>
-      {children}
-    </FeatureFlagsContext.Provider>
-  );
+    return <FeatureFlagsContext.Provider value={flags}>{children}</FeatureFlagsContext.Provider>;
 }
 
 /**
@@ -29,9 +25,9 @@ export function FeatureFlagsProvider({
  * Returns `defaultValue` if the flag was not evaluated server-side.
  */
 export function useFeatureFlag<T extends string | boolean | number>(
-  key: string,
-  defaultValue: T
+    key: string,
+    defaultValue: T,
 ): T {
-  const flags = useContext(FeatureFlagsContext);
-  return (flags[key] as T) ?? defaultValue;
+    const flags = useContext(FeatureFlagsContext);
+    return (flags[key] as T) ?? defaultValue;
 }

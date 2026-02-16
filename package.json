@@ -1,0 +1,25 @@
+{
+    "name": "freedom",
+    "module": "index.ts",
+    "scripts": {
+        "lint": "bun run --cwd frontend lint && bun run --cwd backend lint",
+        "lint:fix": "bun run --cwd frontend lint:fix && bun run --cwd backend lint:fix",
+        "format": "prettier --write .",
+        "format:check": "prettier --check ."
+    },
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "@types/bun": "latest",
+        "eslint": "^10.0.0",
+        "eslint-config-prettier": "^10.1.8",
+        "globals": "^17.3.0",
+        "jiti": "^2.6.1",
+        "prettier": "3.8.1",
+        "typescript-eslint": "^8.55.0"
+    },
+    "peerDependencies": {
+        "typescript": "^5"
+    },
+    "private": true,
+    "type": "module"
+}

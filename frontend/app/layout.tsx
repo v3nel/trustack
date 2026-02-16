@@ -8,44 +8,41 @@ import { FEATURE_ESCROW_ENABLED } from "@/lib/feature-flags";
 import { FeatureFlagsProvider } from "@/lib/devcycle-client";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+    variable: `--font-geist-sans`,
+    subsets: [`latin`],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+    variable: `--font-geist-mono`,
+    subsets: [`latin`],
 });
 
 export const metadata: Metadata = {
-  title: "Trustack — Freelancer Project Management",
-  description:
-    "Manage projects, tasks, and client transparency with Trustack.",
+    title: `Trustack — Freelancer Project Management`,
+    description: `Manage projects, tasks, and client transparency with Trustack.`,
 };
 
 export default async function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  // Evaluate all feature flags server-side and pass to client
-  const escrowEnabled = await getVariableValue(FEATURE_ESCROW_ENABLED, true);
+    // Evaluate all feature flags server-side and pass to client
+    const escrowEnabled = await getVariableValue(FEATURE_ESCROW_ENABLED, true);
 
-  const flags: Record<string, string | boolean | number> = {
-    [FEATURE_ESCROW_ENABLED]: escrowEnabled,
-  };
+    const flags: Record<string, string | boolean | number> = {
+        [FEATURE_ESCROW_ENABLED]: escrowEnabled,
+    };
 
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
-      >
-        <FeatureFlagsProvider flags={flags}>
-          <ThemeProvider defaultTheme="light">
-            <TooltipProvider>{children}</TooltipProvider>
-          </ThemeProvider>
-        </FeatureFlagsProvider>
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en" suppressHydrationWarning>
+            <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
+                <FeatureFlagsProvider flags={flags}>
+                    <ThemeProvider defaultTheme="light">
+                        <TooltipProvider>{children}</TooltipProvider>
+                    </ThemeProvider>
+                </FeatureFlagsProvider>
+            </body>
+        </html>
+    );
 }
