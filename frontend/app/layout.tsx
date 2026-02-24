@@ -8,13 +8,13 @@ import { FEATURE_ESCROW_ENABLED } from "@/lib/feature-flags";
 import { FeatureFlagsProvider } from "@/lib/devcycle-client";
 
 const geistSans = Geist({
-    variable: `--font-geist-sans`,
-    subsets: [`latin`],
+    variable: "--font-geist-sans",
+    subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-    variable: `--font-geist-mono`,
-    subsets: [`latin`],
+    variable: "--font-geist-mono",
+    subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
